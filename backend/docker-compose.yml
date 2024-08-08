@@ -1,0 +1,32 @@
+# https://docs.docker.com/compose/
+
+name: rag-app
+
+services:
+  app:
+    build: app/
+    volumes:
+      - ./app:/workspace
+    environment:
+      - TZ=America/Los_Angeles
+    env_file:
+      - .env
+    ports:
+      - 8000:8000
+    networks:
+      - web
+  
+  nginx:
+    build: nginx/
+    ports:
+      - 80:80
+    volumes:
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf:ro
+    depends_on:
+      - app
+    networks:
+      - web
+
+networks:
+  web:
+    driver: bridge

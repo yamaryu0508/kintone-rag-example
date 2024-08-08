@@ -1,0 +1,15 @@
+env/
+__pycache__
+.cache
+.DS_Store
+.cursor-server
+.vscode
+.ollama
+.ssh
+.bash_history
+
+*.env
+*.env.*
+env.*
+
+containers*.json

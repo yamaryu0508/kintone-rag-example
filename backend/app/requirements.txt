@@ -1,0 +1,11 @@
+fastapi==0.111.0
+pydantic==2.7.4
+pydantic-settings==2.3.4
+uvicorn==0.30.1
+chromadb==0.5.3
+openai==1.35.7
+sentence-transformers==3.0.1
+kintone_rest_client @ git+https://github.com/yamaryu0508/kintone-rest-client@5484ac674ba492c98fd03918904d5cd655e83cfc
+langchain==0.2.6
+langchain-community==0.2.6
+langchain-openai==0.1.13

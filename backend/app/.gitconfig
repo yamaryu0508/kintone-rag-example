@@ -1,0 +1,5 @@
+[user]
+	email = yamaryu0508@gmail.com
+	name = Ryu Yamashita
+[credential]
+	helper = "!f() { /workspace/.cursor-server/bin/a915e3254b1192ce240c078da83fc1768a6e3e90/node /tmp/vscode-remote-containers-6f1d0e92-81fa-4c45-8e9f-0498ab274594.js git-credential-helper $*; }; f"

@@ -1,0 +1,29 @@
+app_name: FastAPI App
+
+datasources:
+  kintone:
+    base_url: https://yamaroo-dev.kintone.com
+    apps:
+      - id: 1042
+        api_token: '** import from environment variables in settings.py **'
+        fields:
+          - Question
+          - Answer
+
+models:
+  openai:
+    model: gpt-3.5-turbo
+    api_key: '** import from environment variables in settings.py **'
+
+chromadb:
+  collection_name: kintone-rag-app
+  persist_dir: /tmp/chromadb
+  cache_dir: /tmp
+  embeddings_model_name: all-MiniLM-L6-v2
+
+docs:
+  url: /docs
+  title: API Documentation
+
+debug: True
+log_level: INFO
