@@ -9,3 +9,5 @@ kintone_rest_client @ git+https://github.com/yamaryu0508/kintone-rest-client@548
 langchain==0.2.6
 langchain-community==0.2.6
 langchain-openai==0.1.13
+pypdfium2==4.30.0
+pandas==2.2.2
